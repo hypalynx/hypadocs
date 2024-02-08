@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url("/css/Manrope-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url("/css/Manrope-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+html, body {
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    font-size: 125%;  
+    line-height: 1.5;  
+} 
+
+main {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+pre {
+    padding: 1em;
+    border-radius: 4px;
+}
+
+a {  
+    text-decoration: none !important;  
+    color: black;  
+}
+
+a:hover {
+    color: #2c2c2c;
+}
+
+nav {
+    height: 100%;
+    width: 12em;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul > li {
+    list-style-type: none;
+}
+
+.content {  
+    margin-bottom: 2rem;  
+}  
+
+#content { 
+    display: flex;
+    flex-direction: column;
+    max-width: 37em;
+    padding-left: 12em;
+    margin-left: 2em;
+} 

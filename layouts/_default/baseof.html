@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        <main>
+            {{- partial "nav.html" . -}}
+            <div id="content">
+                {{- block "main" . }}{{- end }}
+            </div>
+            {{- partial "footer.html" . -}}
+
+            {{ if .Page.Store.Get "hasMermaid" }}
+            <script src='/js/mermaid.min.js'></script>
+            {{ end }}
+        </main>
+    </body>
+</html>

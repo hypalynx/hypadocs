@@ -1,0 +1,17 @@
+<nav role="navigation">  
+    <a href="/"><strong>{{ .Site.Title }}</strong></a>  
+    <ul>
+        {{ range .Site.Pages }}
+        <li>
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        </li>
+        {{ end }}
+    </ul>
+    <ul>
+        {{ range .Pages }}
+        <li>
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</nav>  
